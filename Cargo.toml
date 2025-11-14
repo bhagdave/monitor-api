@@ -1,0 +1,19 @@
+[package]
+name = "monitor-api"
+authors = ["Dave Gill <d.gill@stem.org.uk>"]
+description = "Returns monitoring information about a machine"
+version = "0.1.0"
+rust-version = "1.78"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1"
+spin-sdk = "5.1.1"
+sysinfo= "0.30"
+serde_json = "1.0"
+chrono = "0.4"
+
+[workspace]
