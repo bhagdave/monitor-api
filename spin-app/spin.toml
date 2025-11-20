@@ -13,8 +13,8 @@ route = "/metrics/..."
 component = "monitor-api"
 
 [component.monitor-api]
-source = "target/wasm32-wasip1/release/monitor_api.wasm"
-allowed_outbound_hosts = []
+source = "../target/wasm32-wasip1/release/spin_app.wasm"
+allowed_outbound_hosts = ["http://127.0.0.1:8001"]
 [component.monitor-api.build]
 command = "cargo build --target wasm32-wasip1 --release"
 watch = ["src/**/*.rs", "Cargo.toml"]
