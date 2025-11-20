@@ -1,0 +1,13 @@
+[package]
+name = "metrics-service"
+authors = ["Dave Gill <d.gill@stem.org.uk>"]
+version = "0.1.0"
+rust-version = "1.78"
+edition = "2021"
+
+
+[dependencies]
+sysinfo= "0.30"
+serde_json = "1.0"
+chrono = "0.4"
+
